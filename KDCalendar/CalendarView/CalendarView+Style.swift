@@ -72,10 +72,10 @@ extension CalendarView {
         
         //Default Style
         public var cellColorDefault          = UIColor(white: 0.0, alpha: 0.1)
-        public var cellTextColorDefault      = UIColor.gray
+        public var cellTextColorDefault      = UIColor.black
         public var cellBorderColor           = UIColor.clear
         public var cellBorderWidth           = CGFloat(0.0)
-        public var cellFont                  = UIFont.systemFont(ofSize: 17)
+        public var cellFont                  = UIFont.systemFont(ofSize: 12)
         
         //Today Style
         public var cellTextColorToday        = UIColor.gray
@@ -87,7 +87,7 @@ extension CalendarView {
         public var cellSelectedBorderColor   = UIColor(red: 254.0/255.0, green: 73.0/255.0, blue: 64.0/255.0, alpha: 0.8)
         public var cellSelectedBorderWidth   = CGFloat(2.0)
         public var cellSelectedColor         = UIColor.clear
-        public var cellSelectedTextColor     = UIColor.black
+        public var cellSelectedTextColor     = UIColor(red: 254.0/255.0, green: 73.0/255.0, blue: 64.0/255.0, alpha: 0.8)
         
         //Weekend Style
         public var cellTextColorWeekend      = UIColor(red:1.00, green:0.84, blue:0.65, alpha:1.00)
