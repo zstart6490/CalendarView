@@ -41,6 +41,13 @@ open class CalendarDayCell: UICollectionViewCell {
     }
   }
   
+  var outfitPhoto:UIImage? {
+    didSet{
+      self.dotsView.isHidden = (outfitPhoto == nil)
+      self.setNeedsLayout()
+    }
+  }
+  
   var day: Int? {
     set {
       guard let value = newValue else { return self.textLabel.text = nil }
@@ -137,6 +144,7 @@ open class CalendarDayCell: UICollectionViewCell {
   
   let textLabel   = UILabel()
   let imgView   = UIImageView(image: UIImage.init(named: "ic_cloud"))
+  var outfitPhotoView   = UIImageView()
   let dotsView    = UIView()
   let bgView      = UIView()
   
